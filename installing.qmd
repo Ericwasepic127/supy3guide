@@ -123,28 +123,28 @@ For Linux distributions, we recommend using `pyenv`, a robust Python environment
 Open your terminal and run the appropriate command for your package manager to install the required build dependencies:
 
 * **Ubuntu / Debian / Mint:**
-  ```bash
-  sudo apt update
-  sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
-  ```
+```bash
+sudo apt update
+sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+```
 
 * **Fedora / RHEL / CentOS:**
-  ```bash
-  sudo dnf groupinstall "Development Tools"
-  sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel
-  ```
+```bash
+sudo dnf groupinstall "Development Tools"
+sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel
+```
 
 * **Arch Linux:**
-  ```bash
-  sudo pacman -S --needed base-devel
-  sudo pacman -S git openssl zlib bzip2 readline sqlite3 libffi xz tk
-  ```
+```bash
+sudo pacman -S --needed base-devel
+sudo pacman -S git openssl zlib bzip2 readline sqlite3 libffi xz tk
+```
 
 ### 2. Install and Configure pyenv
  1. Run the automatic installer script:
-   ```bash
-   curl https://pyenv.run/ | bash
-   ```
+```bash
+curl https://pyenv.run/ | bash
+```
 
 2. Follow the instructions printed in the terminal to add pyenv to your shell profile configurations (e.g., .bashrc or .zshrc).
 3. Restart your terminal or source your profile to apply the changes.
