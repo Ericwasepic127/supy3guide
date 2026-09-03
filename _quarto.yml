@@ -7,13 +7,10 @@ website:
   sidebar:
     contents:
       - href: ../ide.html
-        text: "Open IDE"
+        text: "Open Online IDE"
       - href: ../hello.html
-        text: "Open REPL"
+        text: "Open Online REPL"
       - href: index.qmd
         text: "Home"
-
-format:
-  html:
-    title-block-style: none
-    template: ""
+      - href: installing.qmd
+        text: "Install Python"
