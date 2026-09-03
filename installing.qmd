@@ -126,24 +126,27 @@ Open your terminal and run the appropriate command for your package manager to i
 * **Ubuntu / Debian / Mint:**
   ```bash
   sudo apt update
-  sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev```
-
+  sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+  ```
 
 * **Fedora / RHEL / CentOS:**
    ```bash
    sudo dnf groupinstall "Development Tools"
-   sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel```
+   sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel
+   ```
 
 * **Arch Linux:**
    ```bash
    sudo pacman -S --needed base-devel
    sudo pacman -S git openssl zlib bzip2 readline sqlite3 libffi xz tk
    ```
+
 ### 2. Install and Configure pyenv
  1. Run the automatic installer script:
    ```bash
-   curl [https://pyenv.run](https://pyenv.run) | bash
+   curl https://pyenv.run/ | bash
    ```
+
 2. Follow the instructions printed in the terminal to add pyenv to your shell profile configurations (e.g., .bashrc or .zshrc).
 3. Restart your terminal or source your profile to apply the changes.
 
@@ -168,7 +171,7 @@ But, you don't needed for projects that doesn't conflict!
 
 1. Create venv
  * This is example code: Replace tags that has `<` start and `>` end with inside sentence matching word
- `<Python command you use, like python3 or python` -m venv <Name your virtual environment name to what you want>
+ `<Python command you use, like python3 or python -m venv <Name your virtual environment name to what you want>`
 2. Activate venv you created
   * Windows (Command Prompt): `<Name of folder that you put in 1st step>\Scripts\activate.bat`
   * Windows (Powershell): `<Name of folder that you put in 1st step>\Scripts\Activate.ps1`
