@@ -129,16 +129,16 @@ Open your terminal and run the appropriate command for your package manager to i
   ```
 
 * **Fedora / RHEL / CentOS:**
-   ```bash
-   sudo dnf groupinstall "Development Tools"
-   sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel
-   ```
+  ```bash
+  sudo dnf groupinstall "Development Tools"
+  sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel
+  ```
 
 * **Arch Linux:**
-   ```bash
-   sudo pacman -S --needed base-devel
-   sudo pacman -S git openssl zlib bzip2 readline sqlite3 libffi xz tk
-   ```
+  ```bash
+  sudo pacman -S --needed base-devel
+  sudo pacman -S git openssl zlib bzip2 readline sqlite3 libffi xz tk
+  ```
 
 ### 2. Install and Configure pyenv
  1. Run the automatic installer script:
@@ -155,6 +155,7 @@ Install your desired version using pyenv. We recommend version 3.13:
 pyenv install 3.13
 pyenv global 3.13
 ```
+
 If you wanna set to specfic folder (like your project folder) to use for prevent break your some of system tools, use `pyenv local 3.13` in project folder instead!
 
 ## Visual Studio Code Installation
