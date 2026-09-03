@@ -12,7 +12,3 @@ website:
         text: "Open REPL"
       - href: index.qmd
         text: "Home"
-  footer:
-      left: "(c) 2026 Erkhembayr Batjargal"
-      right: "Built with Quarto"
-  
