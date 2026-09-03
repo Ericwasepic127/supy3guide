@@ -16,3 +16,5 @@ website:
 format:
   html:
     title-block-style: none
+    page-layout: full
+    template: null
