@@ -319,8 +319,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong>Ubuntu / Debian / Mint:</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install <span class="at">-y</span> git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Fedora / RHEL / CentOS:</strong> <code>bash  sudo dnf groupinstall "Development Tools"  sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel</code></p></li>
-<li><p><strong>Arch Linux:</strong> <code>bash  sudo pacman -S --needed base-devel  sudo pacman -S git openssl zlib bzip2 readline sqlite3 libffi xz tk</code></p></li>
+<li><p><strong>Fedora / RHEL / CentOS:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dnf groupinstall <span class="st">"Development Tools"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><strong>Arch Linux:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> pacman <span class="at">-S</span> <span class="at">--needed</span> base-devel</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> pacman <span class="at">-S</span> git openssl zlib bzip2 readline sqlite3 libffi xz tk</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ul>
 </section>
 <section id="install-and-configure-pyenv" class="level3">
@@ -328,7 +332,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li>Run the automatic installer script:</li>
 </ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> https://pyenv.run/ <span class="kw">|</span> <span class="fu">bash</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> https://pyenv.run/ <span class="kw">|</span> <span class="fu">bash</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="2" type="1">
 <li>Follow the instructions printed in the terminal to add pyenv to your shell profile configurations (e.g., .bashrc or .zshrc).</li>
 <li>Restart your terminal or source your profile to apply the changes.</li>
@@ -337,8 +341,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="install-python-1" class="level3">
 <h3 class="anchored" data-anchor-id="install-python-1">3. Install Python</h3>
 <p>Install your desired version using pyenv. We recommend version 3.13:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pyenv</span> install 3.13</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pyenv</span> global 3.13</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pyenv</span> install 3.13</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pyenv</span> global 3.13</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>If you wanna set to specfic folder (like your project folder) to use for prevent break your some of system tools, use <code>pyenv local 3.13</code> in project folder instead!</p>
 </section>
 </section>
