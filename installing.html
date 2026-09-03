@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Erkhembayr">
 
-<title>Learning Python - with guide – Python Guide - How to learn python?</title>
+<title>Installing Python, setting up environment – Python Guide - How to learn python?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -82,7 +116,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Python Guide - How to learn python?
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
@@ -132,20 +168,183 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Learning Python - with guide</h1></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Installing Python, setting up environment</h1></header>
 
 <header id="title-block-header">
 
-<p class="author">Erkhembayr</p>
 
 </header>
 
 
-<section id="currently-in-build" class="level3">
-<h3 class="anchored" data-anchor-id="currently-in-build">Currently in build</h3>
-<p>You can visit <a href="../ide.html">SUPY3IDE</a> to code!</p>
+<section id="python-vs-code-installation-guide" class="level1">
+<h1>Python &amp; VS Code Installation Guide</h1>
+<p>A comprehensive guide to setting up Python and Visual Studio Code across Windows, macOS, and Linux.</p>
+<section id="contents" class="level2">
+<h2 class="anchored" data-anchor-id="contents">Contents</h2>
+<ul>
+<li><a href="#windows-installation">Windows Installation</a></li>
+<li><a href="#macos-installation">macOS Installation</a></li>
+<li><a href="#linux-installation-using-pyenv">Linux Installation (using pyenv)</a></li>
+<li><a href="#visual-studio-code-installation">Visual Studio Code Installation</a></li>
+<li><a href="#venv-installation">Using Virtual ENVironments (venv)</a></li>
+</ul>
+<blockquote class="blockquote">
+<p>[!TIP] Don’t want to be install anything? Use my made <a href="../ide.html">SUPY3IDE</a>! Free, privacy focused, sandboxed, no advertisements, Python Integrated Development Environment! Just open and code, no setup needed! Just Browser and Internet needed, not else!</p>
+</blockquote>
+<hr>
+</section>
+<section id="windows-installation" class="level2">
+<h2 class="anchored" data-anchor-id="windows-installation">Windows Installation</h2>
+<p>We recommend choosing one of the following two methods to install Python on Windows:</p>
+<section id="method-1-using-the-python-install-manager-recommended" class="level3">
+<h3 class="anchored" data-anchor-id="method-1-using-the-python-install-manager-recommended">Method 1: Using the Python Install Manager (Recommended)</h3>
+<ol type="1">
+<li>Open the Microsoft Store or use this <a href="https://apps.microsoft.com/detail/9nq7512cxl7t">direct store link</a>.</li>
+<li>Search for <strong>Python Install Manager</strong> and click <strong>Install</strong>.</li>
+<li>Open the application and follow the on-screen instructions to complete the setup.</li>
+</ol>
+</section>
+<section id="method-2-using-the-direct-executable-installer" class="level3">
+<h3 class="anchored" data-anchor-id="method-2-using-the-direct-executable-installer">Method 2: Using the Direct Executable Installer</h3>
+<blockquote class="blockquote">
+<p>⚠️ <strong>Note:</strong> Standard <code>.exe</code> direct installers are deprecated starting from Python 3.15. For newer versions, please use Method 1.</p>
+</blockquote>
+<ol type="1">
+<li>Navigate to the official <a href="https://python.org/downloads/">Python Downloads page</a>.</li>
+<li>Select the latest release, or download the <a href="https://www.python.org/downloads/release/python-313/">recommended Python 3.13 version</a>.</li>
+<li>Download the <strong>Windows installer</strong> executable (<code>.exe</code>).</li>
+<li>Double-click the downloaded file to run the installer.</li>
+<li><strong>Crucial:</strong> Ensure you check the box that says <strong>“Add Python to PATH”</strong> before clicking install, then follow the remaining prompts.</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="macos-installation" class="level2">
+<h2 class="anchored" data-anchor-id="macos-installation">macOS Installation</h2>
+<ol type="1">
+<li><strong>Download the Installer:</strong> Visit the official <a href="https://python.org/downloads/">Python Downloads page</a> and download the macOS installer package (<code>.pkg</code>). The <a href="https://www.python.org/downloads/release/python-313/">recommended version is 3.13</a>.</li>
+<li><strong>Run the Installer:</strong> Open the downloaded <code>.pkg</code> file and follow the on-screen installation steps. You will be prompted to enter your Mac’s administrator password.</li>
+<li><strong>Install Certificates:</strong>
+<ul>
+<li>Once complete, open your <code>Applications</code> folder and locate the newly created <code>Python 3.x</code> directory.</li>
+<li>Double-click the <code>Install Certificates.command</code> file. <em>This step is required to ensure Python can securely connect to the internet.</em></li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="linux-installation-using-pyenv" class="level2">
+<h2 class="anchored" data-anchor-id="linux-installation-using-pyenv">Linux Installation (using pyenv)</h2>
+<p>For Linux distributions, we recommend using <code>pyenv</code>, a robust Python environment manager that functions similarly to Windows’ Install Manager.</p>
+<section id="install-dependencies" class="level3">
+<h3 class="anchored" data-anchor-id="install-dependencies">1. Install Dependencies</h3>
+<p>Open your terminal and run the appropriate command for your package manager to install the required build dependencies:</p>
+<ul>
+<li><p><strong>Ubuntu / Debian / Mint:</strong> <code>bash sudo apt update sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev</code></p></li>
+<li><p><strong>Fedora / RHEL / CentOS:</strong> <code>bash  sudo dnf groupinstall "Development Tools"  sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel</code></p></li>
+<li><p><strong>Arch Linux:</strong> <code>bash  sudo pacman -S --needed base-devel  sudo pacman -S git openssl zlib bzip2 readline sqlite3 libffi xz tk</code> ### 2. Install and Configure pyenv</p></li>
+</ul>
+<ol type="1">
+<li>Run the automatic installer script:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="pp">[</span><span class="ss">https://pyenv.run</span><span class="pp">]</span><span class="er">(</span><span class="ex">https://pyenv.run</span><span class="kw">)</span> <span class="kw">|</span> <span class="fu">bash</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="2" type="1">
+<li>Follow the instructions printed in the terminal to add pyenv to your shell profile configurations (e.g., .bashrc or .zshrc).</li>
+<li>Restart your terminal or source your profile to apply the changes.</li>
+</ol>
+</section>
+<section id="install-python" class="level3">
+<h3 class="anchored" data-anchor-id="install-python">3. Install Python</h3>
+<p>Install your desired version using pyenv. We recommend version 3.13:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pyenv</span> install 3.13</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pyenv</span> global 3.13</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="visual-studio-code-installation" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code-installation">Visual Studio Code Installation</h2>
+<p>Get your development environment ready by installing Visual Studio Code for your platform: * <strong>Windows:</strong> Download via the Microsoft Store Link. * <strong>macOS:</strong> Follow the official macOS Setup Guide. * <strong>Linux:</strong> Follow the official Linux Setup Guide for .deb, .rpm, or Snap packages.</p>
+<p><sub>Contributed by <span class="citation" data-cites="Ericwasepic127">@Ericwasepic127</span></sub> ### Method 2: Using the Direct Executable Installer &gt; ⚠️ <strong>Note:</strong> Standard <code>.exe</code> direct installers are deprecated starting from Python 3.15. For newer versions, please use Method 1.</p>
+<ol type="1">
+<li>Navigate to the official <a href="https://python.org/downloads/">Python Downloads page</a>.</li>
+<li>Select the latest release, or download the <a href="https://www.python.org/downloads/release/python-313/">recommended Python 3.13 version</a>.</li>
+<li>Download the <strong>Windows installer</strong> executable (<code>.exe</code>).</li>
+<li>Double-click the downloaded file to run the installer.</li>
+<li><strong>Crucial:</strong> Ensure you check the box that says <strong>“Add Python to PATH”</strong> before clicking install, then follow the remaining prompts.</li>
+</ol>
+<hr>
+</section>
+<section id="macos-installation-1" class="level2">
+<h2 class="anchored" data-anchor-id="macos-installation-1">macOS Installation</h2>
+<ol type="1">
+<li><strong>Download the Installer:</strong> Visit the official <a href="https://python.org/downloads/">Python Downloads page</a> and download the macOS installer package (<code>.pkg</code>). The <a href="https://www.python.org/downloads/release/python-313/">recommended version is 3.13</a>.</li>
+<li><strong>Run the Installer:</strong> Open the downloaded <code>.pkg</code> file and follow the on-screen installation steps. You will be prompted to enter your Mac’s administrator password.</li>
+<li><strong>Install Certificates:</strong>
+<ul>
+<li>Once complete, open your <code>Applications</code> folder and locate the newly created <code>Python 3.x</code> directory.</li>
+<li>Double-click the <code>Install Certificates.command</code> file. <em>This step is required to ensure Python can securely connect to the internet.</em></li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="linux-installation-using-pyenv-1" class="level2">
+<h2 class="anchored" data-anchor-id="linux-installation-using-pyenv-1">Linux Installation (using pyenv)</h2>
+<p>For Linux distributions, we recommend using <code>pyenv</code>, a robust Python environment manager that functions similarly to Windows’ Install Manager.</p>
+<section id="install-dependencies-1" class="level3">
+<h3 class="anchored" data-anchor-id="install-dependencies-1">1. Install Dependencies</h3>
+<p>Open your terminal and run the appropriate command for your package manager to install the required build dependencies:</p>
+<ul>
+<li><p><strong>Ubuntu / Debian / Mint:</strong> <code>bash sudo apt update sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev</code></p></li>
+<li><p><strong>Fedora / RHEL / CentOS:</strong> <code>bash  sudo dnf groupinstall "Development Tools"  sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel</code></p></li>
+<li><p><strong>Arch Linux:</strong> <code>bash  sudo pacman -S --needed base-devel  sudo pacman -S git openssl zlib bzip2 readline sqlite3 libffi xz tk</code> ### 2. Install and Configure pyenv</p></li>
+</ul>
+<ol type="1">
+<li>Run the automatic installer script:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="pp">[</span><span class="ss">https://pyenv.run</span><span class="pp">]</span><span class="er">(</span><span class="ex">https://pyenv.run</span><span class="kw">)</span> <span class="kw">|</span> <span class="fu">bash</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="2" type="1">
+<li>Follow the instructions printed in the terminal to add pyenv to your shell profile configurations (e.g., .bashrc or .zshrc).</li>
+<li>Restart your terminal or source your profile to apply the changes.</li>
+</ol>
+</section>
+<section id="install-python-1" class="level3">
+<h3 class="anchored" data-anchor-id="install-python-1">3. Install Python</h3>
+<p>Install your desired version using pyenv. We recommend version 3.13:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pyenv</span> install 3.13</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pyenv</span> global 3.13</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If you wanna set to specfic folder (like your project folder) to use for prevent break your some of system tools, use <code>pyenv local 3.13</code> in project folder instead!</p>
+</section>
+</section>
+<section id="visual-studio-code-installation-1" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code-installation-1">Visual Studio Code Installation</h2>
+<p>Get your development environment ready by installing Visual Studio Code for your platform: * <strong>Windows:</strong> Download via the Microsoft Store Link. * <strong>macOS:</strong> Follow the official macOS Setup Guide. * <strong>Linux:</strong> Follow the official Linux Setup Guide for .deb, .rpm, or Snap packages.</p>
+</section>
+<section id="venv-installation" class="level2">
+<h2 class="anchored" data-anchor-id="venv-installation">Venv installation</h2>
+<p>Setting up a Python virtual environment (venv) is a best practice to keep your project dependencies isolated.</p>
+<p>But, you don’t needed for projects that doesn’t conflict!</p>
+<ol type="1">
+<li>Create venv</li>
+</ol>
+<ul>
+<li>This is example code: Replace tags that has <code>&lt;</code> start and <code>&gt;</code> end with inside sentence matching word <code>&lt;Python command you use, like python3 or python</code> -m venv <name your="" virtual="" environment="" name="" to="" what="" you="" want=""></name></li>
+</ul>
+<ol start="2" type="1">
+<li>Activate venv you created</li>
+</ol>
+<ul>
+<li>Windows (Command Prompt): <code>&lt;Name of folder that you put in 1st step&gt;\Scripts\activate.bat</code></li>
+<li>Windows (Powershell): <code>&lt;Name of folder that you put in 1st step&gt;\Scripts\Activate.ps1</code></li>
+<li>macOS/Linux: <code>source &lt;Name of folder that you put in 1st step&gt;/bin/activate</code></li>
+</ul>
+<ol start="3" type="1">
+<li>Install dependencies: <code>pip install &lt;Package name&gt;</code></li>
+<li>After all of this, to quit venv, type <code>deactivate</code> to exit venv and return to normal shell</li>
+</ol>
+<section id="contributed-originally-made-by-ericwasepic127---originally-from-infinitodepython-projects" class="level6">
+<h6 class="anchored" data-anchor-id="contributed-originally-made-by-ericwasepic127---originally-from-infinitodepython-projects">Contributed (Originally made) by <span class="citation" data-cites="Ericwasepic127">@Ericwasepic127</span> - <a href="https://github.com/Infinitode/Python-Projects/blob/main/INSTALLING.md">Originally from Infinitode/Python-projects</a></h6>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
