@@ -12,3 +12,7 @@ website:
         text: "Open REPL"
       - href: index.qmd
         text: "Home"
+
+format:
+  html:
+    title-block-style: none
