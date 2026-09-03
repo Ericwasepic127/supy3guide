@@ -1,7 +1,0 @@
----
-title: Learning Python - with guide
-author: "Erkhembayr"
----
-### Currently in build
-
-You can visit [SUPY3IDE](../ide.html) to code!

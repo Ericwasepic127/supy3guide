@@ -1,2 +1,0 @@
-# pyguide
-Python Learning Web

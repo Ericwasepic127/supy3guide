@@ -1,6 +1,0 @@
-project:
-  type: website
-  output-dir: _site
-
-website:
-  title: "Python Guide - How to learn python?"
