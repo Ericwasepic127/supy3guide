@@ -1,15 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Learning Python - with guide",
-    "section": "",
-    "text": "Currently in creation!\nYou can visit SUPY3IDE to code while isn’t ready yet!",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
     "objectID": "installing.html",
     "href": "installing.html",
     "title": "Installing Python, setting up environment",
@@ -107,6 +97,16 @@
     "text": "Setting up a Python virtual environment (venv) is a best practice to keep your project dependencies isolated.\nBut, you don’t needed for projects that doesn’t conflict!\n\nCreate venv\n\n\nThis is example code: Replace tags that has &lt; start and &gt; end with inside sentence matching word &lt;Python command you use, like python3 or python -m venv \n\n\nActivate venv you created\n\n\nWindows (Command Prompt): &lt;Name of folder that you put in 1st step&gt;\\Scripts\\activate.bat\nWindows (Powershell): &lt;Name of folder that you put in 1st step&gt;\\Scripts\\Activate.ps1\nmacOS/Linux: source &lt;Name of folder that you put in 1st step&gt;/bin/activate\n\n\nInstall dependencies: pip install &lt;Package name&gt;\nAfter all of this, to quit venv, type deactivate to exit venv and return to normal shell",
     "crumbs": [
       "Install Python"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Learning Python - with guide",
+    "section": "",
+    "text": "Currently in creation!\nYou can visit SUPY3IDE to code while isn’t ready yet!",
+    "crumbs": [
+      "Home"
     ]
   }
 ]
