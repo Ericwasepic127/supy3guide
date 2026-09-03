@@ -1,1 +1,1 @@
-Sitemap: https://Ericwasepic127.github.io/pyguide/sitemap.xml
+Sitemap: https://Ericwasepic127.github.io/supy3guide/sitemap.xml
