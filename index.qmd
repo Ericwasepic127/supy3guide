@@ -2,8 +2,6 @@
 title: Learning Python - with guide
 author: "Erkhembayr"
 title-block-banner: false
-navigation:
-  next: setup.qmd
 ---
 ### Currently in build
 
