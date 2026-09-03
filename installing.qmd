@@ -1,5 +1,6 @@
 ---
 title: "Installing Python, setting up environment"
+author: "Erkhembayr Batjargal (@Ericwasepic127)"
 ---
 
 # Python & VS Code Installation Guide
