@@ -14,7 +14,6 @@ A comprehensive guide to setting up Python and Visual Studio Code across Windows
 - [Visual Studio Code Installation](#visual-studio-code-installation)
 - [Using Virtual ENVironments (venv)](#venv-installation)
 
-> [!TIP]
 > Don't want to be install anything? Use my made [SUPY3IDE](../ide.html)! Free, privacy focused, sandboxed, no advertisements, Python Integrated Development Environment! Just open and code, no setup needed!
 > Just Browser and Internet needed, not else!
 
