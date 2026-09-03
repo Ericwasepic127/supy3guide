@@ -176,4 +176,3 @@ But, you don't needed for projects that doesn't conflict!
   `pip install <Package name>`
 4. After all of this, to quit venv, type `deactivate` to exit venv and return to normal shell
 
-###### Contributed (Originally made) by @Ericwasepic127 - [Originally from Infinitode/Python-projects](https://github.com/Infinitode/Python-Projects/blob/main/INSTALLING.md)
