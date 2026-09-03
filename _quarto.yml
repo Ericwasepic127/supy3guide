@@ -13,6 +13,6 @@ website:
       - href: index.qmd
         text: "Home"
   footer:
-    left: "(c) 2026 Erkhembayr Batjargal"
-    right: "Built with Quarto"
+      left: "(c) 2026 Erkhembayr Batjargal"
+      right: "Built with Quarto"
   
