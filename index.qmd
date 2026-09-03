@@ -1,8 +1,7 @@
 ---
-title: Learning Python - with guide
-author: "Erkhembayr"
-title-block-banner: false
+title: "Learning Python - with guide"
+author: "Erkhembayr Batjargal (@Ericwasepic127)"
 ---
-### Currently in build
+### Currently in creation!
 
-You can visit [SUPY3IDE](../ide.html) to code!
+You can visit [SUPY3IDE](../ide.html) to code while isn't ready yet!
