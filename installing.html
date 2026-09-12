@@ -314,18 +314,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Create venv</li>
 </ol>
 <ul>
-<li>This is example code: Replace tags that has <code>&lt;</code> start and <code>&gt;</code> end with inside sentence matching word <code>&lt;Python command you use, like python3 or python&gt; -m venv &lt;Name your virtual environment name to what you want&gt;</code></li>
+<li>This is example code: Replace tags that has <code>&lt;</code> start and <code>&gt;</code> end with inside sentence matching word</li>
 </ul>
+<pre class="shell"><code>&lt;Python command you use, like python3 or python&gt; -m venv &lt;Name your virtual environment name to what you want&gt;</code></pre>
 <ol start="2" type="1">
 <li>Activate venv you created</li>
 </ol>
 <ul>
-<li><p>Windows (Command Prompt): <code>&lt;Name of folder that you put in 1st step&gt;\Scripts\activate.bat</code></p></li>
-<li><p>Windows (Powershell): <code>&lt;Name of folder that you put in 1st step&gt;\Scripts\Activate.ps1</code></p></li>
-<li><p>macOS/Linux: <code>source &lt;Name of folder that you put in 1st step&gt;/bin/activate</code></p></li>
+<li>Windows (Command Prompt):</li>
 </ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;</span>Name of folder that you put in 1st step<span class="kw">&gt;</span>\Scripts\activate.bat</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>Windows (Powershell):</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>Name of folder that you put <span class="kw">in</span> 1st step<span class="op">&gt;</span>\Scripts\Activate<span class="op">.</span><span class="fu">ps1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>macOS/Linux:</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> <span class="op">&lt;</span>Name of folder that you put in 1st step<span class="op">&gt;</span>/bin/activate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="3" type="1">
-<li>Install dependencies: <code>pip install &lt;Package name&gt;</code></li>
+<li>Install dependencies:</li>
+</ol>
+<pre class="shell"><code>pip install &lt;Package name&gt;</code></pre>
+<ol start="4" type="1">
 <li>After all of this, to quit venv, type <code>deactivate</code> to exit venv and return to normal shell</li>
 </ol>
 
