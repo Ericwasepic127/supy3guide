@@ -93,10 +93,10 @@ pyenv global 3.13
 If you wanna set to specfic folder (like your project folder) to use for prevent break your some of system tools, use `pyenv local 3.13` in project folder instead!
 
 ## Visual Studio Code Installation
-Get your development environment ready by installing Visual Studio Code for your platform:
- * **Windows:** Download via the Microsoft Store Link.
- * **macOS:** Follow the official macOS Setup Guide.
- * **Linux:** Follow the official Linux Setup Guide for .deb, .rpm, or Snap packages.
+* Get your development environment ready by installing Visual Studio Code for your platform:
+ - **Windows:** Download via the Microsoft Store Link.
+ - **macOS:** Follow the official macOS Setup Guide.
+ - **Linux:** Follow the official Linux Setup Guide for .deb, .rpm, or Snap packages.
 
 ## Venv installation
 Setting up a Python virtual environment (venv) is a best practice to keep your project dependencies isolated.
@@ -105,12 +105,12 @@ But, you don't needed for projects that doesn't conflict!
 
 1. Create venv
  * This is example code: Replace tags that has `<` start and `>` end with inside sentence matching word
- `<Python command you use, like python3 or python -m venv <Name your virtual environment name to what you want>`
+ ```<Python command you use, like python3 or python> -m venv <Name your virtual environment name to what you want>```
 2. Activate venv you created
-  * Windows (Command Prompt): `<Name of folder that you put in 1st step>\Scripts\activate.bat`
-  * Windows (Powershell): `<Name of folder that you put in 1st step>\Scripts\Activate.ps1`
-  * macOS/Linux: `source <Name of folder that you put in 1st step>/bin/activate`
+  * Windows (Command Prompt): ```<Name of folder that you put in 1st step>\Scripts\activate.bat```
+  * Windows (Powershell): ```<Name of folder that you put in 1st step>\Scripts\Activate.ps1```
+  * macOS/Linux: ```source <Name of folder that you put in 1st step>/bin/activate```
 3. Install dependencies:
-  `pip install <Package name>`
+  ```pip install <Package name>```
 4. After all of this, to quit venv, type `deactivate` to exit venv and return to normal shell
 
