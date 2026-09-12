@@ -105,18 +105,29 @@ But, you don't needed for projects that doesn't conflict!
 
 1. Create venv
  * This is example code: Replace tags that has `<` start and `>` end with inside sentence matching word
-```<Python command you use, like python3 or python> -m venv <Name your virtual environment name to what you want>```
+```shell
+<Python command you use, like python3 or python> -m venv <Name your virtual environment name to what you want>
+```
 2. Activate venv you created
   * Windows (Command Prompt): 
-```<Name of folder that you put in 1st step>\Scripts\activate.bat```
+```cmd
+<Name of folder that you put in 1st step>\Scripts\activate.bat
+```
 
   * Windows (Powershell): 
-```<Name of folder that you put in 1st step>\Scripts\Activate.ps1```
+```powershell
+<Name of folder that you put in 1st step>\Scripts\Activate.ps1
+```
 
   * macOS/Linux: 
-```source <Name of folder that you put in 1st step>/bin/activate```
+```bash
+source <Name of folder that you put in 1st step>/bin/activate
+```
 
 3. Install dependencies:
-  ```pip install <Package name>```
+```shell
+pip install <Package name>
+```
+
 4. After all of this, to quit venv, type `deactivate` to exit venv and return to normal shell
 
