@@ -22,7 +22,7 @@ The comment needs to start by `#` and it doesn't end until next line comes, ther
 
 ### Strings
 In python, this is invaild
-```{python}
+```python
 You Can Not Type directly
 ```
 Instead, we use `strings` to store that as like
