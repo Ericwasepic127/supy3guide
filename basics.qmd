@@ -47,8 +47,11 @@ You have learned about strings, integers & floats but ... we need to store them,
 
 #### Variable naming
 Rules you must follow:
+
 1. Variable names mustn't have spaces
+
 2. Variable names must follow camelCase or underscored_name
+
 3. Variable names should not have dashes (-), any symbols(@, *, &, !, ?, etc.)
 
 ----
