@@ -1,5 +1,22 @@
 [
   {
+    "objectID": "basics.html",
+    "href": "basics.html",
+    "title": "Python Basics: First of all",
+    "section": "",
+    "text": "Before we start, we need to learn python basics\n\nContents:\n\nComments\nStrings\nIntegers and Floats\nVariables ### Comments In python, you can add description to your code using comments\n\n# This is comment\nThe comment needs to start by # and it doesn’t end until next line comes, there’s no way to end a comment so\n# This chapter # won't end it\n\n\nStrings\nIn python, this is invaild\nYou Can Not Type directly\nInstead, we use strings to store that as like\n\"This is string\" # This works\nIn string, you can use single quotes and double quotes like 'this one'\nImportantly, do not forgot to close string by same quote you used to open, and it will raise error if you don’t end your string in line where you start\n\n\nIntegers and Floats\nIn python, you can use numbers like\n39 # Integer\n95.1 # Float\n89.0 # This is also float\n\n\nVariables\nYou’ve been learnt string, integer & floats but … we need to store it doesn’t?\n\nVariable naming\nRules you must follow: 1. Variable names mustn’t have spaces 2. Variable names must follow camelCase or underscored_name 3. Variable names should not have dashes (-), any symbols(@, *, &, !, ?, etc.) —- Now let’s set value!\nmy_variable = \"My variable\" # Sets string value\ninteger_variable = 192 # Sets integer value\nfloat_variable = 485.1 # Sets float value\n\n\n\n\nGreat job!\nBefore we go to next page, how about do simple this test to prove you understand this lesson?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Learning Python - with guide",
+    "section": "",
+    "text": "Currently in creation!\nYou can visit SUPY3IDE to code while isn’t ready yet!",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
     "objectID": "installing.html",
     "href": "installing.html",
     "title": "Installing Python, setting up environment",
@@ -67,16 +84,6 @@
     "text": "Setting up a Python virtual environment (venv) is a best practice to keep your project dependencies isolated.\nBut, you don’t needed for projects that doesn’t conflict!\n\nCreate venv\n\n\nThis is example code: Replace tags that has &lt; start and &gt; end with inside sentence matching word\n\n&lt;Python command you use, like python3 or python&gt; -m venv &lt;Name your virtual environment name to what you want&gt;\n\nActivate venv you created\n\n\nWindows (Command Prompt):\n\n&lt;Name of folder that you put in 1st step&gt;\\Scripts\\activate.bat\n\nWindows (Powershell):\n\n&lt;Name of folder that you put in 1st step&gt;\\Scripts\\Activate.ps1\n\nmacOS/Linux:\n\nsource &lt;Name of folder that you put in 1st step&gt;/bin/activate\n\nInstall dependencies:\n\npip install &lt;Package name&gt;\n\nAfter all of this, to quit venv, type deactivate to exit venv and return to normal shell",
     "crumbs": [
       "Install Python"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Learning Python - with guide",
-    "section": "",
-    "text": "Currently in creation!\nYou can visit SUPY3IDE to code while isn’t ready yet!",
-    "crumbs": [
-      "Home"
     ]
   }
 ]
