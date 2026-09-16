@@ -10,6 +10,7 @@ Before we start, ***we need to** learn python basics*
 - [Strings](#strings)
 - [Integers and Floats](#integers-and-floats)
 - [Variables](#variables)
+
 ### Comments
 In python, you can add description to your code using `comments`
 ```python
@@ -49,13 +50,17 @@ Rules you must follow:
 1. Variable names mustn't have spaces
 2. Variable names must follow camelCase or underscored_name
 3. Variable names should not have dashes (-), any symbols(@, *, &, !, ?, etc.)
+
 ----
+
 Now let's set value!
 ```python
 my_variable = "My variable" # Sets string value
 integer_variable = 192 # Sets integer value
 float_variable = 485.1 # Sets float value
 ```
+
 ----
+
 ### Great job!
 Before we go to next page, how about do simple this [test](https://ericwasepic127.github.io/ide.html?code=IyBDb21wbGV0ZSBieSBpbnN0cnVjdGlvbnMKIyBJZiB5b3UgZG8gd3JvbmcsIHlvdSB3aWxsIGdldCBlcnJvcgoKIyBUT0RPOiBDcmVhdGUgc3RyaW5nIHZhcmlhYmxlIHdpdGggdmFsdWUgSGVsbG8hCm15X3N0cmluZ192YXIgPSAKCiMgVE9ETzogQ3JlYXRlIHZhcmlhYmxlIG5hbWVkIGludF92YXIgYW5kIHNldCBhbnkgaW50ZWdlciB2YWx1ZQoKCiMgVE9ETzogRml4IGNvZGUgYmVsb3cKc3RyaW5nX3ZhciA9ICJNeSBzdHJpbmcgdmFyaWFibGUnCgojIEludGVybmFsIGNvZGUgYmVsb3c6CiMgVGhlcmUgYXJlIGNoZWNrcyB0byBzZWUgZGlkIHlvdSBkbyBjb3JyZWN0bHkKCgoKCgoKCgoKCgppZiBpc2luc3RhbmNlKG15X3N0cmluZ192YXIsIHN0cik6CiAgICBpZiBteV9zdHJpbmdfdmFyID09ICJIZWxsbyEiOgogICAgICAgIHByaW50KCJHcmVhdCBqb2IhIFlvdSBtYWRlIHN0cmluZyB2YXJpYWJsZSBjb3JyZWN0bHkiKQogICAgZWxzZToKICAgICAgICBwcmludCgiTG9va3MgbGlrZSB5b3VyIHZhbHVlIGlzIG5vdCBtYXRjaGluZyIpCmVsc2U6CiAgICBwcmludCgiWW91IGRpZG4ndCBtYWRlIHN0cmluZyIpCgppZiAiaW50X3ZhciIgaW4gZ2xvYmFscygpOgogICAgaWYgdHlwZShpbnRfdmFyKSA9PSBpbnQ6CiAgICAgICAgcHJpbnQoIkdyZWF0IGpvYiEgWW91IG1hZGUgaW50ZWdyciB2YXJpYWJsZSIpCiAgICBlbHNlOgogICAgICAgIHByaW50KCJZb3UgZGlkbid0IG1hZGUgaW50ZWdlciB2YXJpYWJsZSIpCmVsc2U6CiAgICBwcmludCgiWW91IGRpZG4ndCBtYWRlIGludGVnZXIgdmFyaWFibGUiKQoKaWYgaXNpbnN0YW5jZShzdHJpbmdfdmFyLCBzdHIpOgogICAgcHJpbnQoIkdvb2QhIFlvdSBmaXhlZCB0aGUgc3RyaW5nIHZhcmlhYmxlIikKZWxzZToKICAgIHByaW50KCJEaWRuJ3QgZml4ZWQgdGhlIHN0cmluZyB2YXIiKQ%3D%3D&hideTool=true&title=VGVzdCBCYXNpY3MgLSBTVVBZM0dVSURF&note=Q2xpY2sgcnVuIHRvIHNlZSBkaWQgeW91IGRvbmUgY29ycmVjdGx5LCBlZGl0IHRoZSBjb2RlIGJlbG93&link=aHR0cHM6Ly9lcmljd2FzZXBpYzEyNy5naXRodWIuaW8vc3VweTNndWlkZS9iYXNpY3MuaHRtbA%3D%3D) to prove you understand this lesson?
